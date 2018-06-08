@@ -8,7 +8,6 @@ public abstract class BaseEntity<T extends BaseEntity<T, ID>, ID extends BaseVal
     private Class<T> type;
     @NotNull
     private final ID id;
-    private String test;
 
     protected BaseEntity(Class<T> type, ID id) {
         this.type = type;
