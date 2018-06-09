@@ -2,6 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+    <properties>
+        <embed.mongo.version>1.50.5</embed.mongo.version>
+    </properties>
 
 
     <parent>
@@ -12,7 +15,7 @@
 	<artifactId>incognito-infra</artifactId>
 	<packaging>jar</packaging>
 
-	<name>Incognito infra</name>
+	<name>Incognito Infra</name>
 	<description>Infrastructure module of Incognito app</description>
 
 
@@ -30,6 +33,19 @@
             <version>0.0.1-SNAPSHOT</version>
             <classifier>tests</classifier>
             <scope>test</scope>
+        </dependency>
+
+        <!--Embedded mongodb-->
+        <dependency>
+            <groupId>de.flapdoodle.embed</groupId>
+            <artifactId>de.flapdoodle.embed.mongo</artifactId>
+            <version>${embed.mongo.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cz.jirutka.spring</groupId>
+            <artifactId>embedmongo-spring</artifactId>
+            <version>RELEASE</version>
         </dependency>
     </dependencies>
 </project>
