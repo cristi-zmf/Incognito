@@ -22,26 +22,19 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.cristi.web.incognito</groupId>
+			<artifactId>incognito-application</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!--Internal modules-->
 		<dependency>
 			<groupId>com.cristi.web.incognito</groupId>
-			<artifactId>incognito-domain</artifactId>
+			<artifactId>incognito-infra</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
+			<scope>runtime</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>com.cristi.web.incognito</groupId>
-			<artifactId>incognito-domain</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-			<classifier>tests</classifier>
-			<scope>test</scope>
-		</dependency>
-
-        <dependency>
-            <groupId>com.cristi.web.incognito</groupId>
-            <artifactId>incognito-infra</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
 	<build>
