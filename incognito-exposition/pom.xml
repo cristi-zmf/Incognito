@@ -25,13 +25,21 @@
 		<dependency>
 			<groupId>com.cristi.web.incognito</groupId>
 			<artifactId>incognito-application</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${project.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>com.cristi.web.incognito</groupId>
+            <artifactId>incognito-application</artifactId>
+            <version>${project.version}</version>
+            <classifier>tests</classifier>
+            <scope>test</scope>
+        </dependency>
+
 		<!--Internal modules-->
 		<dependency>
 			<groupId>com.cristi.web.incognito</groupId>
 			<artifactId>incognito-infra</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${project.version}</version>
 			<scope>runtime</scope>
 		</dependency>
         <dependency>
