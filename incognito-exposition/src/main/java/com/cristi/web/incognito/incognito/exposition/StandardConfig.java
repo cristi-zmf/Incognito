@@ -5,5 +5,5 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan("com.cristi.web.incognito")
-public class StandardConfig {
+public @interface StandardConfig {
 }

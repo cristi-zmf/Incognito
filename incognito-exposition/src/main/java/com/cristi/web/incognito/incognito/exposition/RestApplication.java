@@ -4,12 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
 
-@Configuration
-@ComponentScan(basePackages = "com.cristi.web.incognito")
+@StandardConfig
 @EnableAutoConfiguration
 public class RestApplication extends SpringBootServletInitializer {
     private static Class applicationClass = RestApplication.class;
