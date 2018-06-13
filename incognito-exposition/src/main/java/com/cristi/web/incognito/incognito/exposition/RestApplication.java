@@ -8,7 +8,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @StandardConfig
 @EnableAutoConfiguration
 public class RestApplication extends SpringBootServletInitializer {
-    private static Class applicationClass = RestApplication.class;
+    private static Class<RestApplication> applicationClass = RestApplication.class;
     public static void main(String[] args) {
         SpringApplication.run(RestApplication.class, args);
     }
