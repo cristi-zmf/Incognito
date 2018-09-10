@@ -8,7 +8,6 @@
         <artifactId>incognito-parent</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <groupId>com.cristi.web.incognito</groupId>
     <artifactId>incognito-exposition</artifactId>
     <packaging>war</packaging>
 

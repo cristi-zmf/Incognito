@@ -1,9 +1,8 @@
-package com.cristi.web.incognito.incognito.exposition;
+package com.cristi.web.incognito.exposition;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)

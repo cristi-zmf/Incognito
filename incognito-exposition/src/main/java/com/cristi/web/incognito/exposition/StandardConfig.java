@@ -1,4 +1,4 @@
-package com.cristi.web.incognito.incognito.exposition;
+package com.cristi.web.incognito.exposition;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
