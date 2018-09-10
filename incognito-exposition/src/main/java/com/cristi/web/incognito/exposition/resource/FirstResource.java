@@ -17,6 +17,6 @@ public class FirstResource {
 //    @RequestMapping(value = "/test", method = RequestMethod.POST)
     public ResponseEntity<String> getDto(@RequestBody Dto dto) {
         System.out.printf(format("Got the dto: value: %s , object: %s", dto.value, dto.object));
-        return ok(dto.value);
+        return ok(dto.value.orElse("nu e nimic aici"));
     }
 }
