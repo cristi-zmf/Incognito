@@ -103,10 +103,7 @@
             <artifactId>spring-boot-autoconfigure</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
+
     </dependencies>
 
 
@@ -188,6 +185,10 @@
                 <artifactId>spring-boot-starter-data-mongodb</artifactId>
             </dependency>
 
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-security</artifactId>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-rest</artifactId>
