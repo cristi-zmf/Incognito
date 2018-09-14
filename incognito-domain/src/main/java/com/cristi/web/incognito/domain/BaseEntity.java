@@ -1,11 +1,15 @@
 package com.cristi.web.incognito.domain;
 
+import org.springframework.data.annotation.Transient;
+
 import javax.validation.constraints.NotNull;
 
 import static java.lang.String.format;
 
 public abstract class BaseEntity<T extends BaseEntity<T, ID>, ID extends BaseValueObject<ID>> implements Validable<BaseEntity<T, ID>> {
+    @Transient
     private Class<T> type;
+
     @NotNull
     private final ID id;
 
