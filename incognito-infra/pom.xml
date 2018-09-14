@@ -27,11 +27,11 @@
             <version>2.0.2.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>com.cristi.web.incognito</groupId>
+            <groupId>${project.group}</groupId>
             <artifactId>incognito-domain</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.cristi.web.incognito</groupId>
+            <groupId>${project.group}</groupId>
             <artifactId>incognito-domain</artifactId>
             <classifier>tests</classifier>
             <scope>test</scope>
@@ -40,7 +40,6 @@
         <dependency>
             <groupId>${project.group}</groupId>
             <artifactId>incognito-application</artifactId>
-            <version>${project.version}</version>
         </dependency>
 
 
