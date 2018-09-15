@@ -22,6 +22,11 @@ public class Description extends BaseValueObject<Description> {
         return value;
     }
 
+    private Description() {
+        super(Description.class);
+        this.value = null;
+    }
+
     @Override
     protected List<Object> attributesToIncludeInEqualityCheck() {
         return asList(value);

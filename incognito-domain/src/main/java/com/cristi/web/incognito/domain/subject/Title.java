@@ -17,6 +17,11 @@ public class Title extends BaseValueObject<Title> {
         validate(this);
     }
 
+    private Title() {
+        super(Title.class);
+        this.value = null;
+    }
+
     @Override
     protected List<Object> attributesToIncludeInEqualityCheck() {
         return asList(value);
