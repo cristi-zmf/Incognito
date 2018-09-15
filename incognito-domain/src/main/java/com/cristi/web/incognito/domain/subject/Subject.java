@@ -15,4 +15,13 @@ public class Subject extends BaseEntity<Subject, SubjectId> {
         this.description = description;
         validate(this);
     }
+
+
+    public Title getTitle() {
+        return title;
+    }
+
+    public Description getDescription() {
+        return description;
+    }
 }

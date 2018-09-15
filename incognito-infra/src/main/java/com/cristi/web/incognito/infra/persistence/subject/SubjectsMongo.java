@@ -3,6 +3,7 @@ package com.cristi.web.incognito.infra.persistence.subject;
 import com.cristi.web.incognito.domain.subject.Subject;
 import com.cristi.web.incognito.domain.subject.SubjectId;
 import com.cristi.web.incognito.domain.subject.Subjects;
+import com.cristi.web.incognito.domain.subject.Title;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -34,5 +35,10 @@ public class SubjectsMongo implements Subjects {
     @Override
     public Subject add(Subject subject) {
         return repo.insert(subject);
+    }
+
+    @Override
+    public Set<Subject> findByTitleContaining(String key) {
+        return repo.findByTitleValueContaining(key);
     }
 }

@@ -33,6 +33,6 @@ public abstract class BaseValueObject<T extends BaseValueObject<T>> implements V
 
     @Override
     public String toString() {
-        return format("[name - value] : [%s : %s]", type.getTypeName(), attributesToIncludeInEqualityCheck());
+        return format("[name - value] : [%s : %s]", type.getSimpleName(), attributesToIncludeInEqualityCheck());
     }
 }

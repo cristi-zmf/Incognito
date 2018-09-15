@@ -13,10 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = ApplicationConfig.class)
 public class IncognitoExpositionApplicationTests {
-
-
 	@Test
 	public void contextLoads() {
 	}
-
 }

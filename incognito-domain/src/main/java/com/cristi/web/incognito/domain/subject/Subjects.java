@@ -8,4 +8,5 @@ public interface Subjects {
     Subject getOrThrow(SubjectId id);
     Optional<Subject> get(SubjectId id);
     Subject add(Subject subject);
+    Set<Subject> findByTitleContaining(String key);
 }
