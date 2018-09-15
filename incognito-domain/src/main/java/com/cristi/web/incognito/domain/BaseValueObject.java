@@ -1,11 +1,14 @@
 package com.cristi.web.incognito.domain;
 
+import org.springframework.data.annotation.Transient;
+
 import java.util.List;
 
 import static java.lang.String.format;
 import static java.util.Objects.hash;
 
 public abstract class BaseValueObject<T extends BaseValueObject<T>> implements Validable<T> {
+    @Transient
     private final Class<T> type;
 
     protected BaseValueObject(Class<T> type) {
