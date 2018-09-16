@@ -102,7 +102,7 @@
                 <executions>
                     <execution>
                         <id>copy-resources</id>
-                        <phase>validate</phase>
+                        <phase>process-resources</phase>
                         <goals>
                             <goal>copy-resources</goal>
                         </goals>
@@ -110,7 +110,7 @@
                             <outputDirectory>${project.build.directory}/classes/resources/</outputDirectory>
                             <resources>
                                 <resource>
-                                    <directory>${project.parent.basedir}/${project.basedir}/src/main/web/dist/incognitoApp/</directory>
+                                    <directory>${project.parent.basedir}/incognito-exposition/src/main/web/dist/incognitoApp/</directory>
                                 </resource>
                             </resources>
                         </configuration>

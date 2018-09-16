@@ -2,6 +2,7 @@ package com.cristi.web.incognito.exposition;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springfox.documentation.builders.PathSelectors;
@@ -13,6 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
+@Profile("SWAGGER")
 public class SwaggerConfig extends WebMvcConfigurationSupport {
     @Bean
     public Docket api() {
@@ -22,6 +24,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
                 .paths(PathSelectors.any())
                 .build();
     }
+
 
     @Override
     protected void addResourceHandlers(ResourceHandlerRegistry registry) {
