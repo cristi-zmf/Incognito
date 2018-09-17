@@ -5,6 +5,7 @@ import com.cristi.web.incognito.domain.subject.Subject;
 import com.cristi.web.incognito.domain.subject.Title;
 import com.cristi.web.incognito.incognito.application.ApplicationConfig;
 import org.assertj.core.api.Assertions;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,10 @@ public class SubjectsMongoLocalIT {
     @Autowired
     private SubjectsMongo sut;
 
+    @Before
+    public void clearDb() {
+        repo.deleteAll();
+    }
     @Test
     public void findAll() {
     }
