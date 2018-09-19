@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Set;
+import java.util.stream.Collectors;
 
+import static java.util.stream.Collectors.*;
 import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
 
 @RestController
@@ -22,7 +24,9 @@ public class ListSubjectsResource {
     }
 
     @GetMapping(path = "/subjects", produces = APPLICATION_JSON_UTF8_VALUE)
-    public Set<Subject> viewSubject(@RequestParam SubjectId id) {
-        return listSubjects.listSubjects();
+    public Set<SubjectDto> viewSubject() {
+        return listSubjects.listSubjects().stream()
+                .map(SubjectDto::new)
+                .collect(toSet());
     }
 }

@@ -4,7 +4,7 @@ import {TableModule} from 'primeng/table';
 import {Subject} from "../table/Subject";
 
 @Component({
-  selector: 'app-table',
+  selector: 'subj-table',
   templateUrl: './subjectsTable.component.html',
   styleUrls: ['./subjectsTable.component.css'],
   providers: [SubjectsTableService, TableModule]
@@ -22,8 +22,8 @@ export class TableComponent implements OnInit {
     ;
 
     this.cols = [
-      {field: 'title.value', header: 'Title'},
-      {field: 'description.value', header: 'Description'}
+      {field: 'title', header: 'Title'},
+      {field: 'description', header: 'Description'}
     ];
   }
 
