@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { TableComponent } from './table/table.component';
+import { TableComponent } from './table/subjectsTable.component';
+
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
