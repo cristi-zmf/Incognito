@@ -62,5 +62,11 @@
             <!--<scope>test</scope>-->
         </dependency>
 
+        <!--migration tool dependency-->
+        <dependency>
+            <groupId>com.github.mongobee</groupId>
+            <artifactId>mongobee</artifactId>
+        </dependency>
+
     </dependencies>
 </project>
