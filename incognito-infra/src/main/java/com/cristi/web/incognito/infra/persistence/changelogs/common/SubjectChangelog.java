@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 
 @ChangeLog(order = "001")
 public class SubjectChangelog {
-    @ChangeSet(order = "001", id = "someChangeWithJongo", author = "testAuthor")
+    @ChangeSet(order = "001", id = "subjectsTestDataSet", author = "cristi")
     public void initialDataSetForSubjectCollection( MongoTemplate mongoTemplate) {
         Subject subject = new Subject(new Title("iPhone xx"), new Description("so xx!!!!!"));
         mongoTemplate.save(subject);

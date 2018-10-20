@@ -14,6 +14,7 @@
         <module>incognito-domain</module>
         <module>incognito-application</module>
         <module>incognito-infra</module>
+        <module>incognito-ui</module>
         <module>incognito-exposition</module>
     </modules>
 
